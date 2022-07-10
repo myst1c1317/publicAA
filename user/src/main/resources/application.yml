@@ -1,0 +1,18 @@
+server:
+  port: 8080
+#  应用名称
+spring:
+  application:
+    name: user-service
+  cloud:
+    nacos:
+      server-addr: 8.130.102.44:8848
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://8.130.102.44:3307/groupsaa?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: 123456
+mybatis-plus:
+  mapper-locations: classpath:mapperxml/*.xml
+  type-aliases-package: com.aa.bean
